@@ -3,7 +3,7 @@
 Sponsorship is always welcome.
 [https://ko-fi.com/trngaje](https://ko-fi.com/trngaje)
 
-installer : FunKey Add on
+> installer : FunKey Add on
 
 You can download it from the following path.
 
@@ -13,7 +13,14 @@ Distribution is free, but please do not share files directly.
 Only link shares that contain this description page are allowed.
 It also does not allow sharing by repackaging individual files.
 
-include advmenu, advmame, retroarch, runcommand
+include advmenu, advmame, retroarch, runcommand, cores
+
+> installer : simplemenu for both Funkery and anbernic
+
+korean version :
+
+[https://github.com/trngaje/rgnano_binary/releases/download/trngaje_230726/install_simplemenu-rgnano.opk](https://github.com/trngaje/rgnano_binary/releases/download/trngaje_230726/install_simplemenu-rgnano.opk)
+
 
 ## new feature
 
@@ -101,16 +108,64 @@ I will also share the official version of 10x10 font.
 
 ### sdlretro
 
+sdlretro not support .zip (compressed rom)
+
 ![](images/sdlretro_menu.png)
 ![](images/sdlretro_list.png)
+
+### simplemenu
+
+add 240x240 theme
+
+240x240/0a
+
+![](images/simplemenu_0a_apps.png)
+![](images/simplemenu_0a_nes.png)
+
+240x240/bigcody
+
+![](images/simplemenu_bigcody_1.png)
+![](images/simplemenu_bigcody_2.png)
+
+240x240/comics
+
+![](images/simplemenu_comic_1.png)
+![](images/simplemenu_comic_2.png)
+![](images/simplemenu_comic_3.png)
+
+help screen for korean version
+
+![](images/simplemenu_help1.png)
+![](images/simplemenu_help2.png)
+![](images/simplemenu_help3.png)
+
+emulator selector for 240x240
+
+![](images/simplemenu_select_1.png)
+
+### dingux-msx standalone emulator
+
+[https://github.com/trngaje/rgnano_binary/releases/download/trngaje_230726/dingux-msx-rgnano_230806_1.opk](https://github.com/trngaje/rgnano_binary/releases/download/trngaje_230726/dingux-msx-rgnano_230806_1.opk)
+
+![](images/dinguxmsx_emul1.png)
+![](images/dinguxmsx_list.png)
+
+korean menu
+
+![](images/dinguxmsx_menu.png)
+![](images/dinguxmsx_setting1.png)
+![](images/dinguxmsx_setting2.png)
+
 
     Applications
     	advmenu
     	st
     	retroarch
+      simplemenu
 
     Emulators
     	advmame
+      dingux-msx
 
     bin
     	sdlretro
@@ -122,7 +177,7 @@ I will also share the official version of 10x10 font.
     	runcommand.sh
     	cfg
 
-    FunKey
+    FunKey or Anbernic
     	.advance
     	.picoarch
     	.config
@@ -130,6 +185,11 @@ I will also share the official version of 10x10 font.
     		cfg
     		saves
         system
+      .simplemenu
+        apps
+        section_groups
+        themes
+      .dingux-msx
 
 
 rom path in advmenu.rc
@@ -149,6 +209,7 @@ rom path in advmenu.rc
     /mnt/pc/
     /mnt/pc98/
     /mnt/gameandwatch/
+    /mnt/nds/
 
 sub path
 
