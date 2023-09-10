@@ -17,7 +17,7 @@ include advmenu, advmame, retroarch, runcommand, cores
 
 > installer : simplemenu for both Funkery and anbernic
 
-korean version :
+korean and english version :
 
 [https://github.com/trngaje/rgnano_binary/releases/download/trngaje_230726/install_simplemenu-rgnano.opk](https://github.com/trngaje/rgnano_binary/releases/download/trngaje_230726/install_simplemenu-rgnano.opk)
 
@@ -85,6 +85,10 @@ to display korean to english (comment below)
     Y : button 4
     Power : display exit menu
 
+### advmess
+
+[how to run advmess](advmess.md)
+
 ### simple terminal
 
 support korean font to display
@@ -114,6 +118,10 @@ sdlretro not support .zip (compressed rom)
 ![](images/sdlretro_list.png)
 
 ### simplemenu
+
+[video:change language](https://youtube.com/shorts/Y1V22Wa9O7c?si=tRuW8Gx07sRON6NG)
+
+[video:launch other frontend by funkey menu](https://youtu.be/H-uzrnraYII?si=ZU_f5Jxcq8HBgA10)
 
 add 240x240 theme
 
@@ -157,39 +165,241 @@ korean menu
 ![](images/dinguxmsx_setting2.png)
 
 
-    Applications
-    	advmenu
-    	st
-    	retroarch
-      simplemenu
+    /usr/games/
+    ├── advmame
+    ├── advmenu
+    ├── advmess
+    ├── invoker
+    ├── resources
+    │   └── akashi.ttf
+    └── simplemenu
 
-    Emulators
-    	advmame
-      dingux-msx
+    /mnt/Anbernic or FunKey/
+    ├── .advance
+    │   ├── Galmuri11.ttf
+    │   ├── advmame.rc
+    │   ├── advmenu.rc
+    │   ├── advmess.rc
+    │   ├── hangul.lng
+    │   ├── hangulmenu.lng
+    ├── .config
+    │   └── retroarch
+    │       ├── retroarch.cfg
+    ├── .dingux-msx
+    │   ├── kbd
+    │   │   ├── Antarctic Adventure (Japan).kbd
+    │   │   └── Legendly Knight (1988)(Topia).kbd
+    │   ├── roms
+    │   ├── save
+    │   │   ├── sav_Bubble Bobble (Japan)_0.sta
+    │   │   ├── sav_Moai no Hibou (Japan)_0.sta
+    │   │   └── sav_carta_0.sta
+    │   ├── scr
+    │   ├── set
+    │   │   └── Antarctic Adventure (Japan).set
+    │   └── txt
+    ├── .picoarch
+    │   └── system
+    │       ├── 32X_G_BIOS.BIN
+    │       ├── 32X_M_BIOS.BIN
+    │       ├── 32X_S_BIOS.BIN
+    │       ├── syscard3.pce
+    │       └── us_scd1_9210.bin
+    ├── .picodrive
+    │   ├── cfg
+    │   ├── config2.cfg
+    │   └── srm
+    ├── .sdlretro
+    │   ├── cfg
+    │   │   ├── cores
+    │   │   └── sdlretro.json
+    │   ├── system
+    │   │   ├── 32X_G_BIOS.BIN
+    │   │   ├── 32X_M_BIOS.BIN
+    │   │   ├── 32X_S_BIOS.BIN
+    │   │   └── us_scd1_9210.bin
+    │   └── tmp
+    ├── .simplemenu
+    │   ├── alias.txt
+    │   ├── apps
+    │   │   ├── DinguxCommander.fgl
+    │   │   ├── ejectusb.fgl
+    │   │   ├── mountusb.fgl
+    │   │   ├── retroarch.fgl
+    │   │   ├── snap
+    │   │   └── st_kor-anbernic_230803.opk
+    │   ├── arcade.txt
+    │   ├── config.ini
+    │   ├── english.lang
+    │   ├── games
+    │   │   └── snap
+    │   ├── kor.lang
+    │   ├── last_state.sav
+    │   ├── section_groups
+    │   │   ├── apps_games.ini
+    │   │   ├── arcades.ini
+    │   │   ├── consoles.ini
+    │   │   ├── handhelds.ini
+    │   │   └── home PC.ini
+    │   ├── themes
+    │   │   └── 240x240
+    │   └── wonderswancolor.txt
+    ├── lan
+    ├── poweroff_time
+    ├── snapshots
+    └── temp
 
-    bin
-    	sdlretro
-    	picoarch
-    	retroarch
-    		cores
+    /mnt/Applications/
+    ├── advmenu-anbernic_230814_1.opk
+    ├── backup_all-anbernic.opk
+    ├── retroarch-anbernic_230803.opk
+    ├── retroarchorg-anbernic_230803.opk
+    ├── simplemenu-rgnano.opk
+    ├── sm64_v1.1_anbernic.opk
+    └── st_kor-anbernic_230803.opk
 
-    runcommand
-    	runcommand.sh
-    	cfg
+    /mnt/Emulators/
+    ├── advmame-anbernic_230804.opk
+    ├── dingux-msx-anbernic_230805_9.opk
+    ├── st4sh-rgnano.opk
 
-    FunKey or Anbernic
-    	.advance
-    	.picoarch
-    	.config
-    	.sdlretro
-    		cfg
-    		saves
-        system
-      .simplemenu
-        apps
-        section_groups
-        themes
-      .dingux-msx
+    /mnt/bin/
+    ├── cores
+    │   ├── bluemsx_libretro.so
+    │   ├── bsnes_libretro.so
+    │   ├── cannonball_libretro.so
+    │   ├── desmume2015_libretro.so
+    │   ├── dosbox_pure_libretro.so
+    │   ├── easyrpg_libretro.so
+    │   ├── fake08_libretro.so
+    │   ├── fbalpha2012_cps1_libretro.so
+    │   ├── fbalpha2012_cps2_libretro.so
+    │   ├── fbalpha2012_cps3_libretro.so
+    │   ├── fbalpha2012_libretro.so
+    │   ├── fbalpha2012_neogeo_libretro.so
+    │   ├── fbneo_libretro.so
+    │   ├── fceumm_libretro.so
+    │   ├── fmsx_libretro.so
+    │   ├── freej2me_libretro.so
+    │   ├── gambatte_libretro.so
+    │   ├── gearboy_libretro.so
+    │   ├── genesis_plus_gx_libretro.so
+    │   ├── genesis_plus_gx_wide_libretro.so
+    │   ├── gpsp_libretro.so
+    │   ├── gw_libretro.so
+    │   ├── mame0139_libretro.so
+    │   ├── mame078plus_libretro.so
+    │   ├── mame2003_libretro.so
+    │   ├── mame2003_plus_kaze_libretro.so
+    │   ├── mame2003_plus_libretro.so
+    │   ├── mame2003_xtreme_libretro.so
+    │   ├── mame2010_libretro.so
+    │   ├── mednafen_lynx_libretro.so
+    │   ├── mednafen_ngp_libretro.so
+    │   ├── mednafen_pce_fast_libretro.so
+    │   ├── mednafen_saturn_libretro.so
+    │   ├── mednafen_vb_libretro.so
+    │   ├── mednafen_wswan_libretro.so
+    │   ├── mesen_libretro.so
+    │   ├── mgba_libretro.so
+    │   ├── neocd_libretro.so
+    │   ├── nestopia_libretro.so
+    │   ├── np2kai_libretro.so
+    │   ├── pcsx_rearmed_libretro.so
+    │   ├── picodrive_libretro.so
+    │   ├── pokemini_libretro.so
+    │   ├── prboom_libretro.so
+    │   ├── prosystem_libretro.so
+    │   ├── quicknes_libretro.so
+    │   ├── sameboy_libretro.so
+    │   ├── snes9x2005_plus_libretro.so
+    │   ├── snes9x2010_libretro.so
+    │   ├── snes9x2018_libretro.so
+    │   ├── snes9x_libretro.so
+    │   ├── squirreljme_libretro.so
+    │   ├── stella2014_libretro.so
+    │   ├── tic80_libretro.so
+    │   ├── vba_next_libretro.so
+    │   ├── vice_x64_libretro.so
+    │   ├── virtualjaguar_libretro.so
+    │   └── yabasanshiro_libretro.so
+    ├── pc98.sh
+    ├── picoarch
+    ├── picoarch.sh
+    ├── retroarch
+    ├── sdlretro
+    └── sdlretro.sh
+
+    /mnt/runcommand/
+    ├── cfg
+    │   ├── 3do.cfg
+    │   ├── apple2.cfg
+    │   ├── arcade.cfg
+    │   ├── atarijaguar.cfg
+    │   ├── atomiswave.cfg
+    │   ├── c64.cfg
+    │   ├── dreamcast.cfg
+    │   ├── easyrpg.cfg
+    │   ├── fbn.cfg
+    │   ├── fbneo.cfg
+    │   ├── fds.cfg
+    │   ├── gameandwatch.cfg
+    │   ├── gamecube.cfg
+    │   ├── gamegear.cfg
+    │   ├── gb.cfg
+    │   ├── gb_sgb.sh
+    │   ├── gba.cfg
+    │   ├── gbc.cfg
+    │   ├── hbmame.cfg
+    │   ├── lynx.cfg
+    │   ├── macintosh.cfg
+    │   ├── mame-advmame.cfg
+    │   ├── mame-mame4all.cfg
+    │   ├── mame.cfg
+    │   ├── mame2010.cfg
+    │   ├── mastersystem.cfg
+    │   ├── megadrive.cfg
+    │   ├── msx.cfg
+    │   ├── msx2.cfg
+    │   ├── n64.cfg
+    │   ├── n64.sh
+    │   ├── naomi.cfg
+    │   ├── nds.cfg
+    │   ├── neogeo.cfg
+    │   ├── neogeocd.cfg
+    │   ├── nes.cfg
+    │   ├── ngp.cfg
+    │   ├── ngpc.cfg
+    │   ├── openbor.cfg
+    │   ├── openbor.sh
+    │   ├── pc.cfg
+    │   ├── pc88.cfg
+    │   ├── pc98.cfg
+    │   ├── pc98.sh
+    │   ├── pcengine.cfg
+    │   ├── pcenginecd.cfg
+    │   ├── pcfx.cfg
+    │   ├── pico8.cfg
+    │   ├── pokemini.cfg
+    │   ├── psp.cfg
+    │   ├── psx.cfg
+    │   ├── saturn.cfg
+    │   ├── scummvm.cfg
+    │   ├── scummvm.sh
+    │   ├── sega32x.cfg
+    │   ├── segacd.cfg
+    │   ├── snes.cfg
+    │   ├── tic8.cfg
+    │   ├── virtualboy.cfg
+    │   ├── wonderswan.cfg
+    │   └── wonderswancolor.cfg
+    ├── runcommand.cfg
+    ├── runcommand.sh
+    ├── runcommand_end.sh
+    ├── runcommand_setting.sh
+    ├── runcommand_start.sh
+
+
 
 
 rom path in advmenu.rc
@@ -210,6 +420,7 @@ rom path in advmenu.rc
     /mnt/pc98/
     /mnt/gameandwatch/
     /mnt/nds/
+    /mnt/advmess/ (bios for advmess)
 
 sub path
 
@@ -227,7 +438,9 @@ prebuilt cores lists by myself
     bluemsx_libretro.so
     mgba_libretro.so
     np2kai_libretro.so
-
+    fake08_libretro.so
+    tic80_libretro.so
+    mednafen_supafaust_libretro.so
 
 defined key value
 
